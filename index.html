@@ -133,8 +133,9 @@
 		/* mobile version */
 		@media( max-width: 992px) {
 			.mainDiv  { flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;}
-			.leftDiv  {  min-height: 30vh; min-width: 68%; } 
-			.rightDiv {  min-height: 50vh; min-width: 68%; } 
+			.leftDiv  {  min-height: 30vh; min-width: 75%; } 
+			.rightDiv {  min-height: 50vh; min-width: 75%; } 
+			div { font-size: 1.3rem;}
 		}
     </style>
     <script src="jquery-3.5.0.min.js"></script>
@@ -153,12 +154,7 @@
 			//$("div.UFO").slideToggle(500);
 		});
 
-		$("#phone1").click(function(){ 
-			if( (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio3.currentTime==0 || audio3.currentTime==audio3.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { 
-				$("this").classList.toggle('phoneOn');
-				audio1.play();
-			}
-		});
+		$("#phone1").click(function(){ if( (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio3.currentTime==0 || audio3.currentTime==audio3.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { audio1.play();}});
 		$("#phone2").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio3.currentTime==0 || audio3.currentTime==audio3.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { audio2.play();}});
 		$("#phone3").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { audio3.play();}});
 		$("#phone4").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio3.currentTime==0 || audio3.currentTime==audio4.duration) ) { audio4.play();}});
