@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>mySite</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<body>
+    <div class="mainDiv">
+    	<div class="leftDiv">
+    		<div class="leftItem">
+    			<a class="leftItems" href="https://vk.com/realalice" target="_blank" title="vk.com/realalice">
+    				<img class="user-photo" src="https://sun9-69.userapi.com/c857736/v857736900/1616b/LEKukeaZjJU.jpg" alt="Alice photo">
+    			</a>
+    			<h1 class="leftItems text-bold">Диденко Алиса</h1>
+    			<p class="leftItems">
+                	в бесконечном поиске<br>
+                	конечной формы себя
+            	</p>
+            </div>
+    	</div>
+    	<div class="rightDiv">
+    		<h2 class="rightItem user-head">Обо мне</h2>
+    		<div class="rightItem" id="user-data-university">
+            	<p class="text-bold user-data">учебное заведение</p>
+            	<p class="user-data"><a href="https://www.msu.ru/en/" target="_blank" title="msu.ru">МГУ имени М.В.Ломоносова</a></p>
+            </div>
+            <div class="rightItem" id="user-data-faculty">
+            	<p class="text-bold user-data">факультет</p>
+            	<p class="user-data"><a href="https://www.phys.msu.ru/" target="_blank" title="phys.msu.ru">физический</a></p>
+            </div>
+            <div class="rightItem" id="user-data-department">
+            	<p class="text-bold user-data">кафедра</p>
+            	<p class="user-data"><a href="https://msu-dubna.ru/hep/" target="_blank" title="msu-dubna.ru">кафедра физики элементарных частиц</a> 109м</p>
+            </div>
+            <h2 class="rightItem UFO-button" id="UFO-button">Контакты</h2>
+            <div class="rightItem">
+            	<p class="text-bold user-data">Email</p>
+            	<p class="user-data">alice.didenko.1998.a@mail.ru</p>
+            </div>
+            <div class="rightItem">
+            	<p class="text-bold user-data">Телефон</p>
+            	<p class="user-data">8988*******</p>
+            </div>
+            
+            <div class="rightItem UFO UFOoff " id="UFO">
+				<p class="text-bold user-data">контакты со внеземным разумом</p>
+            	<div class="ufo" id="ufo1">
+					<audio id="track1" controls><source src="audio/track1.mp3" type="audio/mpeg"></audio>
+            		<img class="ufo-photo" id="phone1" src="https://sun9-16.userapi.com/impf/QLYqSsIZoEct7tClrNZ_MgMQIDB5dOBG-_wuHA/Yedcs6O0xDg.jpg?size=1620x2160&quality=96&sign=861978fd7bdf2f22ea4263228eab0769&type=album" alt="subscriber1">
+            	</div>
+            	<div class="ufo" id="ufo2">
+					<audio id="track2"controls><source src="audio/track2.mp3" type="audio/mpeg"></audio>
+            		<img class="ufo-photo" id="phone2" src="https://sun9-25.userapi.com/impf/5kwQZZBZPdGbjfLpcS50hNnwavS0zH-D_fwg9Q/wMc2MEEJG9I.jpg?size=481x447&quality=96&sign=bc93bab3f5d27c251a50a4eca3eef9b6&type=album" alt="subscriber2">
+            	</div>
+            	<div class="ufo" id="ufo2">
+					<audio id="track3" controls><source src="audio/track3.mp3" type="audio/mpeg"></audio>
+            		<img class="ufo-photo" id="phone3" src="https://sun9-41.userapi.com/impf/GdAoa0FuHYmSbefp6xPjY5tsutJ3BVk4RJjOXw/P4u9E5wstd0.jpg?size=1200x675&quality=96&sign=df7d2f95130652d059317cdc44393bb8&type=album" alt="subscriber3">
+            	</div>
+            	<div class="ufo" id="ufo2">
+					<audio id="track4"controls><source src="audio/track4.mp3" type="audio/mpeg"></audio>
+            		<img class="ufo-photo" id="phone4" src="https://sun9-5.userapi.com/impf/exsc-vIMneXr6vgpSs0b_9DZfUi89B8DPEsGgw/w5NkyWZjk-I.jpg?size=960x960&quality=96&sign=754da475914a8020d5784e80b306b916&type=album" alt="subscriber4">
+            	</div>
+            </div>
+            
+    	</div>
+    </div>
+    	 
+    <style>
+    	*{ box-sizing: border-box;}
+    	html { background-image:  url("http://fony-kartinki.ru/_ph/126/2/244171967.gif?1615316717");}
+    	body { background:  rgba(123, 104, 238, 0.2); margin: 0; }
+    	
+    	.mainDiv { display: flex; justify-content: center; align-items: center; min-height: 100vh;}
+    	
+    	div { color: rgb(238, 227, 209); font-family: Arial; cursor: default; }
+		.text-bold { font-weight: bold;}
+		.leftDiv, .rightDiv { background:  rgba(123, 104, 238, 0.2); min-height: 80vh; } 
+    	
+		.rightItem, div.UFOon {
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+    	}
+		div.UFOoff, audio { display: none; }
+    	
+    	.leftDiv, .rightDiv { display: flex; flex-direction: column; min-width: 300px;  padding: 1rem;}
+    	.leftItem { display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
+    	.leftDiv  { 
+    		width: 20%;
+			max-width: 320px; 
+    		justify-content: center; 
+    		align-items: center;
+    	} 
+		.rightDiv { 
+    		width: 40%; 
+			max-width: 668px;
+    		justify-content: space-between; 
+    		align-items: stretch;
+    	}
+    	.ufo { position: relative;}
+    	.user-photo {
+			border-radius: 50%;
+    		width: 200px;
+    		height: 200px;
+   			border: 4px solid white;
+    		object-fit: cover;
+		}
+		.ufo-photo {
+			border-radius: 2%;
+    		width: 50px;
+    		height: 50px;
+    		object-fit: cover;
+		}
+		.ufo-photo { border: 2px solid white; }
+    	.user-photo:hover {
+    		transform-origin: 50%;
+    		transform: scale(1.2);
+			cursor: pointer;
+    	}
+		.ufo-photo:hover { 
+			border: 3px solid rgb(252, 231, 139);
+			cursor: pointer;
+		}
+
+    	.user-data { vertical-align: bottom;}
+        div.rightItem { background:  rgba(123, 104, 238, 0.4); padding: 0rem 0.5rem; border-bottom: 0.2rem solid rgba(123, 104, 238, 0.8);}
+    	p.user-data a {
+    		color: rgb(200, 200, 200);
+    		line-height: 0; 
+    	}
+
+		/* mobile version */
+		@media( max-width: 992px) {
+			.mainDiv  { flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;}
+			.leftDiv  {  min-height: 30vh; min-width: 68%; } 
+			.rightDiv {  min-height: 50vh; min-width: 68%; } 
+		}
+    </style>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script>
+		var elemDiv = document.querySelector("#UFO");
+		var audio1 = document.querySelector("#track1");
+		var audio2 = document.querySelector("#track2");
+		var audio3 = document.querySelector("#track3");
+		var audio4 = document.querySelector("#track4");
+
+    	$(".UFO-button").click(function(){
+			elemDiv.classList.toggle('UFOoff');
+			elemDiv.classList.toggle('UFOon');
+			console.log(elemDiv.classList);
+			console.log(audio1.duration);
+			//$("div.UFO").slideToggle(500);
+		});
+
+		$("#phone1").click(function(){ 
+			if( (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio3.currentTime==0 || audio3.currentTime==audio3.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { 
+				$("this").classList.toggle('phoneOn');
+				audio1.play();
+			}
+		});
+		$("#phone2").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio3.currentTime==0 || audio3.currentTime==audio3.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { audio2.play();}});
+		$("#phone3").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio4.currentTime==0 || audio4.currentTime==audio4.duration) ) { audio3.play();}});
+		$("#phone4").click(function(){ if( (audio1.currentTime==0 || audio1.currentTime==audio1.duration) && (audio2.currentTime==0 || audio2.currentTime==audio2.duration) && (audio3.currentTime==0 || audio3.currentTime==audio4.duration) ) { audio4.play();}});
+    </script>
+    <script>
+    	var h = window.innerHeight;
+    	var w = window.innerWidth;
+    	//if(h>w) alert("hell");
+    </script>
+</body>
+</html>
